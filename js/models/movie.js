@@ -1,4 +1,4 @@
-App.Movie = Ember.Object.extend(App, WatchedMixin,{
+App.Movie = Ember.Object.extend({
 	id: null,
 	title: null,
 	watched: false,
