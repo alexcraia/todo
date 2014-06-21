@@ -13,27 +13,6 @@
   <script type="text/x-handlebars" data-template-name="application">
   dasdas
   </script>
-  <script type="text/x-handlebars" data-template-name="movie_title">
-    {{#if movie}}
-      <h2>{{movie.title}}</h2>
-    {{else}}
-      <h2>No movie</h2>
-    {{/if}}
-  </script>
-  <script type="text/x-handlebars" data-template-name="movie_listings">
-    <ul class="movie_listings">
-      {{#each movie in content}}
-        <li>
-          <h4>{{movie.title}}</h4>
-          <br/>
-          <h4>{{movie.rating}}</h4>
-          <div {{action "mark_watched" movie}}>
-            I have watched this movie
-          </div>
-        </li>
-      {{/each}}
-    </ul>
-  </script>
   <script src="js/libs/jquery-1.10.2.js"></script>
   <script src="js/libs/handlebars-1.1.2.js"></script>
   <script src="js/libs/ember-1.5.1.js"></script>

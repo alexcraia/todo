@@ -1,11 +1,3 @@
-WatchedMixin = Ember.Mixin.create({
-	isWatched: function(){
-		var title = this.get('title'),
-			watched = this.get('watched');
-		return ('Has '+title+" been watched? "+watched);
-	}
-
-})
 App.Movie = Ember.Object.extend(App, WatchedMixin,{
 	id: null,
 	title: null,
@@ -18,8 +10,4 @@ App.Movie = Ember.Object.extend(App, WatchedMixin,{
 		console.log('Title Changed!');
 	}.observes('title')
 
-});
-
-App.ActionMovie = App.Movie.extend({
-	genre: "action"
 });
